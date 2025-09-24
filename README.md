@@ -1,5 +1,5 @@
 # oregano-maintenance
-
+```
 set -e; \
 echo "🔍 Finding running Docker containers..."; \
 RUNNING_CONTAINERS=$(docker ps -q); \
@@ -26,3 +26,4 @@ for CID in $(docker ps -a -q); do \
   docker run -d --name "$NAME" $IMAGE $CMD; \
 done; \
 echo "🎉 Done! All containers updated and restarted."
+```
