@@ -2,6 +2,8 @@
 
 ## tiger-backup
 
+
+sudo apt install rclone -y; rclone version
 --- 
 
 launchctl unload ~/Library/LaunchAgents/com.marcin.backup.plist;
