@@ -35,13 +35,13 @@ chmod +x backup.sh;
 
 ---
 
-## create new repo
+create new repo
 ```
 restic -r rclone:gdrive:backups/serverOregano/restic init
 ```
 
 
-## do backup:
+do backup:
 ```
 cd ~;
 cd docker;
@@ -50,7 +50,7 @@ chmod +x backup.sh;
 ./backup.sh;
 ```
 
-## check media backups
+check media backups
 ```
 cd ~;
 
@@ -78,7 +78,7 @@ kill -9 25455
 
 
 ---
-## restore
+restore
 ```
 brew install rclone
 
