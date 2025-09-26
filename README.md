@@ -2,15 +2,25 @@
 
 ## tiger-backup
 
+requirements:
+- macos:
 
-sudo apt install rclone -y; rclone version
---- 
-
+- debian
+```
+sudo apt update
+sudo apt install rclone -y; rclone version;
+sudo apt update
+sudo apt install restic -y
+restic version
+```
+ 
+```
 launchctl unload ~/Library/LaunchAgents/com.marcin.backup.plist;
 
 launchctl load ~/Library/LaunchAgents/com.marcin.backup.plist; 
 
 chmod +x backup.sh;
+```
 
 ---
 
@@ -59,7 +69,10 @@ kill -9 25455
 ---
 ## restore
 ```
-brew install rclone  ; rclone config ; rclone ls gdrive: ;  export RESTIC_REPOSITORY="rclone:gdrive:path/to/restic-backup";
+brew install rclone
+
+
+; rclone config ; rclone ls gdrive: ;  export RESTIC_REPOSITORY="rclone:gdrive:path/to/restic-backup";
 export RESTIC_PASSWORD="yourpassword";
 restic snapshots;
 restic restore latest --target ~/restored;
