@@ -4,7 +4,18 @@
 
 requirements:
 - macos:
+```
+# Update Homebrew
+brew update
 
+# Install rclone
+brew install rclone
+rclone version
+
+# Install restic
+brew install restic
+restic version
+```
 - debian
 ```
 sudo apt update
