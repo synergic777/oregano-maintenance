@@ -107,3 +107,10 @@ restic -r rclone:gdrive:backups/serverOregano/restic restore <snapshotID> --targ
  stop restoring task manager
 ps aux | grep restic
 kill -9 {ID}
+
+# mac only
+
+clear qbirrorent folder;
+```
+cd ~/docker/arr-stack ; rm -rf qBitorrent; mkdir qBitorrent; cd ~/docker
+```
