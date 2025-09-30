@@ -4,6 +4,12 @@ shutdown
 ```
 sudo systemctl poweroff
 ```
+
+stop container stack
+```
+docker compose -p bookmarks down
+```
+
 tiger-backup
 
 requirements:
