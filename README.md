@@ -30,18 +30,13 @@ restic version
 ```
 sudo apt update
 sudo apt install rclone -y; rclone version;
-sudo apt update
 sudo apt install restic -y
 restic version
 ```
  
 ```
-launchctl unload ~/Library/LaunchAgents/com.marcin.backup.plist;
 
-launchctl load ~/Library/LaunchAgents/com.marcin.backup.plist; 
 
-chmod +x backup.sh;
-```
 
 ---
 
@@ -124,3 +119,9 @@ clear qbirrorent folder;
 ```
 cd ~/docker/arr-stack ; rm -rf qBitorrent; mkdir qBitorrent; cd ~/docker
 ```
+
+
+chmod +x backup.sh;
+launchctl unload ~/Library/LaunchAgents/com.marcin.backup.plist;
+
+launchctl load ~/Library/LaunchAgents/com.marcin.backup.plist; 
