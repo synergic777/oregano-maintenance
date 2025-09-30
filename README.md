@@ -1,6 +1,10 @@
 # oregano-maintenance
 
-## tiger-backup
+shutdown
+```
+sudo systemctl poweroff
+```
+tiger-backup
 
 requirements:
 - macos:
