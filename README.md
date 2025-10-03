@@ -10,6 +10,11 @@ stop container stack
 docker compose -p bookmarks down
 ```
 
+update immich
+
+cd ~/docker/photos; docker-compose down, docker-compose pull; docker-compose up -d ;
+
+
 tiger-backup
 
 requirements:
